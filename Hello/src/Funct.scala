@@ -8,6 +8,12 @@ object Funct {
     println("Call by Name:")
     println("Returned value is: " + delayed(time()));
     println()
+
+  }
+
+  def time() = {
+    println("Getting time in nano seconds")
+    System.nanoTime //Return value
   }
 
   /*
@@ -21,6 +27,5 @@ object Funct {
     println("Param: " + t)
     t //Return value
   }
-
 
 }
