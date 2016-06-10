@@ -42,6 +42,15 @@ object Funct {
       i = i + 1;
     }
   }
+  
+  /*
+  Default param values for a function
+   */
+  def addInt( a:Int=5, b:Int=7 ) : Int = {
+    var sum:Int = 0
+    sum = a + b
 
+    sum
+  }
 
 }
