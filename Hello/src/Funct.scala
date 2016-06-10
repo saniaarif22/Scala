@@ -9,8 +9,8 @@ object Funct {
     println("Returned value is: " + delayed(time()));
     println()
     println("Variable length args:")
-    printStrings("Hi", "How", "are", "you")
-    printStrings("I'm", "fine")
+    printStrings("Hi", "How", "are", "you") //Passing 4 args
+    printStrings("I'm", "fine") //Passing 3 args
     println()
     println("Default param values:")
     println(addInt()) //Adds default values 5 and 7
