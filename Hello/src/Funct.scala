@@ -8,6 +8,10 @@ object Funct {
     println("Call by Name:")
     println("Returned value is: " + delayed(time()));
     println()
+    println("Variable length args:")
+    printStrings("Hi", "How", "are", "you")
+    printStrings("I'm", "fine")
+    println()
 
   }
 
@@ -27,5 +31,17 @@ object Funct {
     println("Param: " + t)
     t //Return value
   }
+
+  /*
+  Passing variable length arg lists to a function
+   */
+  def printStrings(args: String*) = { //"String*" is actually Array[String]
+    var i: Int = 0;
+    for (arg <- args) {
+      println("Arg value[" + i + "] = " + arg);
+      i = i + 1;
+    }
+  }
+
 
 }
