@@ -12,6 +12,10 @@ object Funct {
     printStrings("Hi", "How", "are", "you")
     printStrings("I'm", "fine")
     println()
+    println("Default param values:")
+    println(addInt()) //Adds default values 5 and 7
+    println(addInt(100, 100))
+    println()
 
   }
 
