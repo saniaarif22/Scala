@@ -21,7 +21,7 @@ object Funct {
 
   def time() = {
     println("Getting time in nano seconds")
-    System.nanoTime //Return value
+    System.nanoTime //Return value - keyword 'return' is optional
   }
 
   /*
