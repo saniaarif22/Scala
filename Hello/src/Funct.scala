@@ -16,7 +16,7 @@ object Funct {
     println(addInt()) //Adds default values 5 and 7
     println(addInt(100, 100))
     println()
-    println("Named Arguments:")
+    println("Named Arguments:") //The order of the parameters don't matter since they are named
     showParams(b=10, a=5)
     println()
 
