@@ -19,6 +19,10 @@ object Funct {
     println("Named Arguments:") //The order of the parameters don't matter since they are named
     showParams(b=10, a=5)
     println()
+    println("Recursive Functions- Factorial:")
+    println(factorial(10))
+    println()
+    
 
   }
 
@@ -66,5 +70,17 @@ object Funct {
   def showParams (a:Int, b:Int) = {
     println("a = " + a + " b = " + b);
   }
+  
+    /*
+  Recursion
+   */
+
+  def factorial(n: BigInt): BigInt = {
+    if (n <= 1)
+      1
+    else
+      n * factorial(n - 1)
+  }
+
 
 }
