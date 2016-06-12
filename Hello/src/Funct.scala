@@ -16,6 +16,9 @@ object Funct {
     println(addInt()) //Adds default values 5 and 7
     println(addInt(100, 100))
     println()
+    println("Named Arguments:")
+    showParams(b=10, a=5)
+    println()
 
   }
 
@@ -55,6 +58,13 @@ object Funct {
     sum = a + b
 
     sum
+  }
+  
+  /*
+  Named Params
+   */
+  def showParams (a:Int, b:Int) = {
+    println("a = " + a + " b = " + b);
   }
 
 }
