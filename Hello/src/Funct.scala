@@ -81,6 +81,13 @@ object Funct {
     else
       n * factorial(n - 1)
   }
+  
+  /*
+  Higher Order functions -- take a function as arg or return a function
+   */
+  def apply(f: Int => String, v: Int) = f(v)
+
+  def layout(x: Int) = "In String: (" + x.toString() + ")"
 
 
 }
