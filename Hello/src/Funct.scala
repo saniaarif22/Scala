@@ -85,7 +85,7 @@ object Funct {
   /*
   Higher Order functions -- take a function as arg or return a function
    */
-  def apply(f: Int => String, v: Int) = f(v)
+  def apply(f: Int => String, v: Int) = f(v) //Takes a function and a value as args and applies the function to the value
 
   def layout(x: Int) = "In String: (" + x.toString() + ")"
 
