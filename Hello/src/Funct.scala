@@ -22,6 +22,9 @@ object Funct {
     println("Recursive Functions- Factorial:")
     println(factorial(10))
     println()
+    println("Higher Order Functions: ")
+    println(apply(layout, 10))
+    println()
     
 
   }
