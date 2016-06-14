@@ -33,7 +33,8 @@ object Funct {
     var inc = (x:Int) => x+1
     println(inc(100))
     println()
-    
+    println("Currying: ")
+    println(strcat("San")("ia"))
     
   }
 
