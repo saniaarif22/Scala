@@ -26,6 +26,16 @@ object Funct {
     println(apply(layout, 10))
     println()
     
+    /*
+    Anonymous Functions -- Assign functions to variables and use the variable as a function
+   */
+    println("Anonymous functions: ")
+    var inc = (x:Int) => x+1
+    println(inc(100))
+    println()
+    
+    
+    
 
   }
 
