@@ -35,8 +35,6 @@ object Funct {
     println()
     
     
-    
-
   }
 
   def time() = {
@@ -101,6 +99,13 @@ object Funct {
   def apply(f: Int => String, v: Int) = f(v) //Takes a function and a value as args and applies the function to the value
 
   def layout(x: Int) = "In String: (" + x.toString() + ")"
+  
+  /*
+  Currying functions
+   */
+  def strcat(s1: String)(s2: String) = {
+    s1 + s2
+  }
 
 
 }
