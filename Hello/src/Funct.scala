@@ -35,6 +35,14 @@ object Funct {
     println()
     println("Currying: ")
     println(strcat("San")("ia"))
+    println()
+    /*
+    Partially bound functions
+     */
+    println("Partially bound functions")
+    val date = new Date
+    val logWithDateBound = log(date, _ : String) //Bind log with fixed date and _ for String
+
     
   }
 
