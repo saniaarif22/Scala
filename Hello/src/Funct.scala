@@ -42,6 +42,12 @@ object Funct {
     println("Partially bound functions")
     val date = new Date
     val logWithDateBound = log(date, _ : String) //Bind log with fixed date and _ for String
+    logWithDateBound("message1" ) //Call the variable as anonymous functn only with missing/ unbound param
+    Thread.sleep(1000)
+    logWithDateBound("message2" )
+    Thread.sleep(1000)
+    logWithDateBound("message3" )
+    println()
 
     
   }
