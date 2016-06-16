@@ -121,6 +121,13 @@ object Funct {
   def strcat(s1: String)(s2: String) = {
     s1 + s2
   }
+  
+  /*
+  Partially bound functions
+   */
+  def log(date: Date, message: String)  = {
+    println(date + "----" + message)
+  }
 
 
 }
