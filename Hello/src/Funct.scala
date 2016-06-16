@@ -128,6 +128,18 @@ object Funct {
   def log(date: Date, message: String)  = {
     println(date + "----" + message)
   }
-
+  
+  /*
+  Nested Functions
+   */
+  def facto(i: Int): Int = {
+    def fact(i: Int, accumulator: Int): Int = {
+      if (i <= 1)
+        accumulator
+      else
+        fact(i - 1, i * accumulator)
+    }
+    fact(i, 1)
+  }
 
 }
