@@ -48,7 +48,8 @@ object Funct {
     Thread.sleep(1000)
     logWithDateBound("message3" )
     println()
-
+    println("Nested functions- Factorial: ")
+    println(facto(10))
     
   }
 
